@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import Welcome from './WelcomeMessage'
 import styled, {css} from 'styled-components'
-import AppLayout from './appLayout'
+import AppLayout from './AppLayout'
+import AppBar from './AppBar';
+
 
 const MyButton= styled.button`
   color:green;
@@ -22,6 +24,7 @@ function App() {
     <div>
       
       <AppLayout>
+        <AppBar/>
           <Welcome/>
       </AppLayout>
     </div>
