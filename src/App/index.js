@@ -1,24 +1,24 @@
 import React from 'react';
 import './App.css';
-import Welcome from './WelcomeMessage'
-import styled, {css} from 'styled-components'
+import Settings from '../Settings';
+// import styled, {css} from 'styled-components'
 import AppLayout from './AppLayout'
 import AppBar from './AppBar';
 import {AppProvider} from './AppProvider';
 
 
-const MyButton= styled.button`
-  color:green;
-  ${props => props.primary && css`
-    background: black;
-    color: palevioletred;
-  `}
-`
+// const MyButton= styled.button`
+//   color:green;
+//   ${props => props.primary && css`
+//     background: black;
+//     color: palevioletred;
+//   `}
+// `
 
-const TomatoButton = styled(MyButton)`
-  color: tomato;
-  border-color: tomato;
-`;
+// const TomatoButton = styled(MyButton)`
+//   color: tomato;
+//   border-color: tomato;
+// `;
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       <AppLayout>
         <AppProvider>
           <AppBar/>
-          <Welcome/>
+          <Settings/>
         </AppProvider>
 
       </AppLayout>

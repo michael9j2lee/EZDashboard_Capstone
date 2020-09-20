@@ -10,6 +10,7 @@ const Bar = styled.div`
     display: grid;
     margin-bottom: 40px;
     grid-template-columns: 100px auto 100px 100px;
+    cursor: pointer;
 `
 
 const ControlButtonElem = styled.div`
@@ -38,7 +39,6 @@ function ControlButton({name}){
             </ControlButtonElem>
             )}
         </AppContext.Consumer>
-
     )
 }
 
