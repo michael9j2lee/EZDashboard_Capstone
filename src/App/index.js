@@ -5,7 +5,7 @@ import Settings from '../Settings';
 import AppLayout from './AppLayout'
 import AppBar from './AppBar';
 import {AppProvider} from './AppProvider';
-
+import LineModule from '../Dashboard';
 
 // const MyButton= styled.button`
 //   color:green;
@@ -23,13 +23,12 @@ import {AppProvider} from './AppProvider';
 function App() {
   return (
     <div>
-      
       <AppLayout>
         <AppProvider>
           <AppBar/>
           <Settings/>
         </AppProvider>
-
+        <LineModule/>
       </AppLayout>
     </div>
   );
