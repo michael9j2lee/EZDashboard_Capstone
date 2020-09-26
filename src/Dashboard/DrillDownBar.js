@@ -5,7 +5,7 @@ import drilldown from 'highcharts/modules/drilldown';
 
 drilldown(Highcharts);
 
-const options = {
+let options = {
     chart: {
         type: 'column'
     },

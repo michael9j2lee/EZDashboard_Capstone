@@ -5,20 +5,8 @@ import Settings from '../Settings';
 import AppLayout from './AppLayout'
 import AppBar from './AppBar';
 import {AppProvider} from './AppProvider';
-import LineModule from '../Dashboard';
+import LifeCycle from '../LifeCycle';
 
-// const MyButton= styled.button`
-//   color:green;
-//   ${props => props.primary && css`
-//     background: black;
-//     color: palevioletred;
-//   `}
-// `
-
-// const TomatoButton = styled(MyButton)`
-//   color: tomato;
-//   border-color: tomato;
-// `;
 
 function App() {
   return (
@@ -28,7 +16,7 @@ function App() {
           <AppBar/>
           <Settings/>
         </AppProvider>
-        <LineModule/>
+        <LifeCycle/>
       </AppLayout>
     </div>
   );
