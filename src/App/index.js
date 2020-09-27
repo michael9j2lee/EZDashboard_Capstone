@@ -5,8 +5,7 @@ import Settings from '../Settings';
 import AppLayout from './AppLayout'
 import AppBar from './AppBar';
 import {AppProvider} from './AppProvider';
-import LifeCycle from '../LifeCycle';
-
+import Dashboard from '../Dashboard';
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
           <AppBar/>
           <Settings/>
         </AppProvider>
-        <LifeCycle/>
+        <Dashboard/>
       </AppLayout>
     </div>
   );

@@ -1,6 +1,7 @@
 import React  from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
+import BarData from './BarData';
 
 let options = {
     chart: {
@@ -8,29 +9,6 @@ let options = {
     },
     title: {
         text: 'Counts'
-    },
-    xAxis: {
-        categories: [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
-        ],
-        crosshair: true
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Counts'
-        }
     },
     tooltip: {
         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
