@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default function getData () {
+export default async function getData () {
     const apiURL = "http://localhost:5000/query";
 
     const axiosOptions = {
@@ -14,10 +14,10 @@ export default function getData () {
             query:1
         }
     }
-    const res = axios(axiosOptions)
+    const res =  axios(axiosOptions)
     .then(response => response.data)
 
-    
+    // var result = formatoptions(res);
 
     return res;
 }

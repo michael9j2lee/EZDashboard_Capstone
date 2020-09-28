@@ -1,7 +1,7 @@
 import React  from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import BarData from './BarData';
+import BarData from './getData';
 
 let options = {
     chart: {
@@ -41,7 +41,7 @@ let options = {
     }]
 }
 
-export default function (){
+export default async function (){
     return ( 
         <HighchartsReact highcharts={Highcharts} options={options} />
     );

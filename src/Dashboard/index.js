@@ -5,12 +5,9 @@ import React from 'react';
 import LineChart from './LineChart';
 import DrillDownBarGraph from './DrillDownBar';
 // import {AppContext} from '../App/AppProvider';
-import query1 from './CountsByDay';
-import StackedBar from './StackedBar';
+import StackedBar from '../StackedBar';
 
  export default function (){
-    // query1.loader(1);
-    
     return (
         <div>
             <LineChart/>
@@ -21,4 +18,6 @@ import StackedBar from './StackedBar';
         </div>
     )
 }
+
+
 
