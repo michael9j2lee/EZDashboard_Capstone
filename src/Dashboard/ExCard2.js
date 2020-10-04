@@ -26,17 +26,21 @@ export default function(){
                     </thead>
                     <tbody>
                         <tr>
-                        <td>East Coast</td>
-                        <td><Alert variant = 'success'>Valid</Alert></td>
+                            <td>East Coast</td>
+                            <td><Alert variant = 'success'>Valid</Alert></td>
                         </tr>
                         <tr>
-                        <td>West Coast</td>
-                        <td><Alert variant = 'success'>Valid</Alert></td>
+                            <td>West Coast</td>
+                            <td><Alert variant = 'success'>Valid</Alert></td>
                         </tr>
                         <tr>
-                        <td>Europe</td>
-                        <td><Alert variant = 'warning'>Warning</Alert></td>
+                            <td>Europe</td>
+                            <td><Alert variant = 'warning'>Warning</Alert></td>
                         </tr>
+                        {/* <tr>
+                            <td>Asia</td>
+                            <td><Alert variant = 'danger'>Danger</Alert></td>
+                        </tr> */}
                     </tbody>
                 </Table>
                 </Card.Text>

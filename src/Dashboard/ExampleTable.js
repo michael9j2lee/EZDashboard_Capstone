@@ -1,8 +1,6 @@
 import React  from 'react';
-import {Table}from 'react-bootstrap';
-import {Card} from 'react-bootstrap';
-import {Accordion} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
+import {Table, Card, Accordion, Button, Alert}from 'react-bootstrap';
+
 
 export default function (){
   return (
@@ -42,6 +40,18 @@ export default function (){
               <td colSpan="2">Larry the Bird</td>
               <td>@twitter</td>
             </tr>
+            <tr>
+              <td>4</td>
+              <td>Michael</td>
+              <td>Meow</td>
+              <td>@Cool</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Kevin</td>
+              <td>Cow</td>
+              <td>@Sweet</td>
+            </tr>
           </tbody>
         </Table>
           </Card.Body>
@@ -50,11 +60,13 @@ export default function (){
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="1">
-            Values
+            Additional Information
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
-          <Card.Body>Hello! I'm another body</Card.Body>
+          <Card.Body>
+            <Alert variant='danger '>You Found me </Alert>
+          </Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>

@@ -13,14 +13,14 @@ export default function(){
 
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             {/* <Alert variant='dark'> */}
-                <Card.Header>Throughput</Card.Header>
+                <Card.Header>Number of Visitors</Card.Header>
             {/* </Alert> */}
             {/* <Alert variant = 'warning'> */}
             <Card.Body>
-                <Card.Title>100 R/S</Card.Title>
+                <Card.Title>5555</Card.Title>
                 <br></br>
                 <Card.Text >
-                Description: Throughput of the service
+                Description: Number of Visitors
                 </Card.Text>
             </Card.Body>
             {/* </Alert> */}
