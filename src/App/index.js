@@ -6,18 +6,17 @@ import AppLayout from './AppLayout'
 import AppBar from './AppBar';
 import {AppProvider} from './AppProvider';
 import Dashboard from '../Dashboard';
-import StackedBar from '../StackedBar';
 // import Async from 'react-async';
 import Content from '../Shared/Content';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-
   return (
     <div>
       <AppLayout>
         <AppProvider>
           <AppBar/>
-          <Settings/>
+          {/* <Settings/> */}
           <Content>
             <Dashboard/>
           </Content>

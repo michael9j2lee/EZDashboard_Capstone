@@ -1,8 +1,8 @@
 import React  from 'react';
 import HighchartsReact from 'highcharts-react-official';
-import getData from './getData';
 import Highcharts from 'highcharts';
 import {AppContext} from "../App/AppProvider";
+import getData from './getData';
 
 
 
@@ -15,7 +15,6 @@ export default function getResults(){
             <HighchartsReact highcharts={Highcharts} options={getData(dataResults)} />
             }
         </div>}
-        
     </AppContext.Consumer>
     )
 }

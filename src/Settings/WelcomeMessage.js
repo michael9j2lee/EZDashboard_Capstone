@@ -6,7 +6,7 @@ export default function (firstVisit) {
       <AppContext.Consumer>
         {({firstVisit}) =>
           firstVisit ? <div>
-            Welcome to EZDashboard!  Please select a color to begin. {' '}
+            Welcome to EZDashboard! {' '}
           </div> : null
         }
       </AppContext.Consumer>

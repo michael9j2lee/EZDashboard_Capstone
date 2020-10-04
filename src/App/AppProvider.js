@@ -37,9 +37,9 @@ export class AppProvider extends React.Component{
         const dataResults =  await axios(axiosOptions)
         .then(response => response.data)
 
-        console.log("COMPONENT DID MOUNT",dataResults);
+        // console.log("COMPONENT DID MOUNT",dataResults);
         this.setState({dataResults});
-        this.setState({dataLoaded:true});
+        // this.setState({dataLoaded:true});
     }
 
     confirmFavorites = () =>{

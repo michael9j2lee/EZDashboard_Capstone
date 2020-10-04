@@ -2,28 +2,7 @@ import axios from 'axios';
 import { getOptions } from 'highcharts';
 import Highcharts from 'highcharts';
 
-// export default async function getData () {
-//     const apiURL = "http://localhost:5000/query";
-
-//     const axiosOptions = {
-//         url: apiURL,
-//         method: 'POST',
-//         headers:{
-//             'Accept': 'application/json, text/plain, */*',
-//             'Content-Type':'application/json'
-//         },
-//         data :{
-//             query:1
-//         }
-//     }
-//     const res =  await axios(axiosOptions)
-//     .then(response => response.data)
-
-//     var result = formatoptions(res);
-
-//     return result;
-// }
-
+//Formats and prepares SQL data into series for High Charts
 function formatData(results){
         var sumWestItems = [];
         var sumEastItems = [];
@@ -54,71 +33,75 @@ function formatData(results){
         return series;
     }
 
-    function getCategories(results){
-        var colDate = [];
-        var totalRecords = results.recordset.length;
+//Formats and prepares SQL columns into categories for High Charts
+function getCategories(results){
+    var colDate = [];
+    var totalRecords = results.recordset.length;
 
-        for(var i = 0; i < totalRecords ; i++){
-            colDate.push(results.recordset[i].Date_YYYYMMDD.substring(0,10));
-        }
-        return colDate;
+    for(var i = 0; i < totalRecords ; i++){
+        colDate.push(results.recordset[i].Date_YYYYMMDD.substring(0,10));
     }
+    return colDate;
+}
 
-    export default function getData(results){
-        // return new Promise(function(resolve,reject){
-            var finalOpt = null;
-            finalOpt =  {
-                
-                chart: {
-                    type: 'column'
-                },
-                title: {
-                    text: 'Counts'
-                },
-                xAxis: {
-                    categories: getCategories(results)
-                },
-                yAxis: {
-                    min: 0,
-                    title: {
-                        text: 'Counts'
-                    },
-                    stackLabels: {
-                        enabled: true,
-                        style: {
-                            fontWeight: 'bold',
-                            color: ( // theme
-                                Highcharts.defaultOptions.title.style &&
-                                Highcharts.defaultOptions.title.style.color
-                            ) || 'gray'
-                        }
-                    }
-                },
-                legend: {
-                    align: 'right',
-                    x: -30,
-                    verticalAlign: 'top',
-                    y: 25,
-                    floating: true,
-                    backgroundColor:
-                        Highcharts.defaultOptions.legend.backgroundColor || 'white',
-                    borderColor: '#CCC',
-                    borderWidth: 1,
-                    shadow: false
-                },
-                tooltip: {
-                    headerFormat: '<b>{point.x}</b><br/>',
-                    pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-                },
-                plotOptions: {
-                    column: {
-                        stacking: 'normal',
-                        dataLabels: {
-                            enabled: true
-                        }
-                    }
-                },
-                series: formatData(results)
-            };
-            return finalOpt;
-    }
+//Formats and prepares the final Options for High Charts.
+export default function getData(results){
+    var finalOpt = null;
+    finalOpt =  {
+        
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'GEWS Counts'
+        },
+        xAxis: {
+            categories: getCategories(results),
+            title:{
+                text: 'Date'
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Counts'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: ( // theme
+                        Highcharts.defaultOptions.title.style &&
+                        Highcharts.defaultOptions.title.style.color
+                    ) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor:
+                Highcharts.defaultOptions.legend.backgroundColor || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        series: formatData(results)
+    };
+    return finalOpt;
+}

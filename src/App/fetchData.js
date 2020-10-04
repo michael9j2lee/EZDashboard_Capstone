@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default async function getData () {
+export default function getData () {
     const apiURL = "http://localhost:5000/query";
 
     const axiosOptions = {

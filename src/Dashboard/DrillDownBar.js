@@ -298,10 +298,12 @@ let options = {
             }
         ]
     }
-}
+};
 
 export default function (){
     return ( 
-        <HighchartsReact highcharts={Highcharts} options={options} />
+        <HighchartsReact highcharts={Highcharts} options={options} 
+        containerProps={{ style: {  height: '100%' } }}
+/>
     );
 }
