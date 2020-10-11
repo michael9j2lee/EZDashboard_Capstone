@@ -1,18 +1,9 @@
 import React from 'react';
-// import { render } from 'react-dom'
-// import Highcharts from 'highcharts';
-// import HighchartsReact from 'highcharts-react-official'
-// import LineChart from './LineChart';
 import DrillDownBarGraph from './DrillDownBar';
-// import {AppContext} from '../App/AppProvider';
 import StackedBar from '../StackedBar';
 import DynamicLineGraph from './DynamicLineGraph';
 import PieChart from './PieChart'
 import GridLayout from 'react-grid-layout'
-// import styled from "styled-components";
-// import "react-grid-layout/css/styles.css";
-// import 'react-resizable/css/styles.css';
-
 import ExCard from './ExCard';
 import ExCard2 from './ExCard2';
 import ExCard3 from './ExCard3';
@@ -37,9 +28,7 @@ import AccordianExAccordianExample from './ExampleTable';
         {i: 'accord', x:0,y:0,w:3,h:2.5,static:true},
     ];
 
-    const layout2 = [
 
-    ]
     return (
 
         <GridLayout className="layout" 

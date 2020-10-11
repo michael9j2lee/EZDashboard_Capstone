@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Settings from '../Settings';
 // import styled, {css} from 'styled-components'
 import AppLayout from './AppLayout'
 import AppBar from './AppBar';
@@ -16,7 +15,6 @@ function App() {
       <AppLayout>
         <AppProvider>
           <AppBar/>
-          {/* <Settings/> */}
           <Content>
             <Dashboard/>
           </Content>

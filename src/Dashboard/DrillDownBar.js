@@ -10,7 +10,7 @@ let options = {
         type: 'column'
     },
     title: {
-        text: 'Bar Chart'
+        text: 'Server Usage'
     },
     xAxis: {
         type: 'category'
@@ -42,37 +42,37 @@ let options = {
             colorByPoint: true,
             data: [
                 {
-                    name: "Chrome",
+                    name: "EastServer1",
                     y: 62.74,
-                    drilldown: "Chrome"
+                    drilldown: "EastServer1"
                 },
                 {
-                    name: "Firefox",
+                    name: "EastServer2",
                     y: 10.57,
-                    drilldown: "Firefox"
+                    drilldown: "EastServer2"
                 },
                 {
-                    name: "Internet Explorer",
+                    name: "WestServer1",
                     y: 7.23,
-                    drilldown: "Internet Explorer"
+                    drilldown: "WestServer1"
                 },
                 {
-                    name: "Safari",
+                    name: "WestServer2",
                     y: 5.58,
-                    drilldown: "Safari"
+                    drilldown: "WestServer2"
                 },
                 {
-                    name: "Edge",
+                    name: "Europe1",
                     y: 4.02,
-                    drilldown: "Edge"
+                    drilldown: "Europe1"
                 },
                 {
-                    name: "Opera",
+                    name: "Europe2",
                     y: 1.92,
-                    drilldown: "Opera"
+                    drilldown: "Europe2"
                 },
                 {
-                    name: "Other",
+                    name: "Asia",
                     y: 7.62,
                     drilldown: null
                 }
@@ -81,8 +81,8 @@ let options = {
     drilldown: {
         series: [
             {
-                name: "Chrome",
-                id: "Chrome",
+                name: "EastServer1",
+                id: "EastServer1",
                 data: [
                     [
                         "v65.0",
@@ -159,8 +159,8 @@ let options = {
                 ]
             },
             {
-                name: "Firefox",
-                id: "Firefox",
+                name: "EastServer2",
+                id: "EastServer2",
                 data: [
                     [
                         "v58.0",
@@ -205,8 +205,8 @@ let options = {
                 ]
             },
             {
-                name: "Internet Explorer",
-                id: "Internet Explorer",
+                name: "WestServer1",
+                id: "WestServer1",
                 data: [
                     [
                         "v11.0",
@@ -227,8 +227,8 @@ let options = {
                 ]
             },
             {
-                name: "Safari",
-                id: "Safari",
+                name: "WestServer2",
+                id: "WestServer2",
                 data: [
                     [
                         "v11.0",
@@ -257,8 +257,8 @@ let options = {
                 ]
             },
             {
-                name: "Edge",
-                id: "Edge",
+                name: "Europe1",
+                id: "Europe1",
                 data: [
                     [
                         "v16",
@@ -279,8 +279,8 @@ let options = {
                 ]
             },
             {
-                name: "Opera",
-                id: "Opera",
+                name: "Europe2",
+                id: "Europe2",
                 data: [
                     [
                         "v50.0",

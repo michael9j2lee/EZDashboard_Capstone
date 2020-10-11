@@ -16,7 +16,7 @@ export default function(){
             {/* <Alert variant = 'warning'> */}
             <Card.Body>
                 <Card.Title>Server Status</Card.Title>
-                <Card.Text >
+                <Card.Body >
                 <Table striped bordered hover>
                     <thead>
                         <tr>
@@ -37,13 +37,9 @@ export default function(){
                             <td>Europe</td>
                             <td><Alert variant = 'warning'>Warning</Alert></td>
                         </tr>
-                        {/* <tr>
-                            <td>Asia</td>
-                            <td><Alert variant = 'danger'>Danger</Alert></td>
-                        </tr> */}
                     </tbody>
                 </Table>
-                </Card.Text>
+                </Card.Body>
             </Card.Body>
             {/* </Alert> */}
         </Card>

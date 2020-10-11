@@ -1,6 +1,4 @@
 import React from 'react';
-import getResults from '../StackedBar';
-import fetchData from './fetchData';
 import axios from 'axios';
 
 export const AppContext = React.createContext();

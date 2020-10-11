@@ -1,5 +1,3 @@
-import axios from 'axios';
-import { getOptions } from 'highcharts';
 import Highcharts from 'highcharts';
 
 //Formats and prepares SQL data into series for High Charts

@@ -11,19 +11,8 @@ let options =  {
         plotShadow: false,
         type: 'pie'
     },
-    // colors: {
-    //     radialGradient: {
-    //         cx: 0.5,
-    //         cy: 0.3,
-    //         r: 0.7
-    //     },
-    //     stops: [
-    //         [0, color],
-    //         [1, Highcharts.color(color).brighten(-0.3).get('rgb')] // darken
-    //     ]
-    // },
     title: {
-        text: 'Browser market shares in January, 2018'
+        text: 'Server Usage by Percentage'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

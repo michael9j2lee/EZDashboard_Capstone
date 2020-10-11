@@ -1,6 +1,6 @@
 import React  from 'react';
 import {Card}from 'react-bootstrap';
-import {Alert} from 'react-bootstrap';
+
 
 
 export default function(){
@@ -11,19 +11,17 @@ export default function(){
         style={{width: '18rem'}}
         >
 
-            {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-            {/* <Alert variant='dark'> */}
-                <Card.Header>Gross</Card.Header>
-            {/* </Alert> */}
-            {/* <Alert variant = 'warning'> */}
+
+            <Card.Header>Time since last Down</Card.Header>
+
             <Card.Body>
-                <Card.Title>$9999.99</Card.Title>
+                <Card.Title>102.3 Hours</Card.Title>
                 <br></br>
                 <Card.Text >
-                Description: Total Gross
+                Description: Time since last incident
                 </Card.Text>
             </Card.Body>
-            {/* </Alert> */}
+
         </Card>
     )
 }

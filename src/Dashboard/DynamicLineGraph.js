@@ -44,7 +44,7 @@ let options = {
     },
 
     title: {
-        text: 'Live Data'
+        text: 'Current Response Times'
     },
 
     exporting: {
